@@ -1,6 +1,6 @@
+import '/components/button_large_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -39,6 +39,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      appBar: AppBar(
+        backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+        automaticallyImplyLeading: false,
+        title: Text(
+          'Page Title',
+          style: FlutterFlowTheme.of(context).title2.override(
+                fontFamily: 'Poppins',
+                color: Colors.white,
+                fontSize: 22.0,
+              ),
+        ),
+        actions: [],
+        centerTitle: false,
+        elevation: 2.0,
+      ),
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
@@ -48,86 +63,77 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 72.0, 0.0, 0.0),
-                      child: Image.network(
-                        'https://picsum.photos/seed/979/600',
-                        width: MediaQuery.of(context).size.width * 1.0,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
-                    Text(
-                      'Pacientes cadastrados por um nutricionista podem ter acesso ao App',
-                      style: FlutterFlowTheme.of(context).bodyText1,
-                    ),
-                    FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: 'Entrar',
-                      options: FFButtonOptions(
-                        width: 130.0,
-                        height: 40.0,
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                        textStyle:
-                            FlutterFlowTheme.of(context).subtitle2.override(
-                                  fontFamily: 'Poppins',
-                                  color: Colors.white,
-                                ),
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                            EdgeInsetsDirectional.fromSTEB(0.0, 72.0, 0.0, 0.0),
+                        child: Image.network(
+                          'https://picsum.photos/seed/979/600',
+                          width: double.infinity,
+                          height: 100.0,
+                          fit: BoxFit.contain,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
                       ),
-                    ),
-                    Text(
-                      'Precisa de ajuda para entrar?',
-                      style: FlutterFlowTheme.of(context).bodyText1,
-                    ),
-                    Text(
-                      'Não tem um nutricionista?\nEncontre o seu profissional ideal',
-                      style: FlutterFlowTheme.of(context).bodyText1,
-                    ),
-                    FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: 'Buscar nutricionista',
-                      options: FFButtonOptions(
-                        width: 130.0,
-                        height: 40.0,
+                      Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                        textStyle:
-                            FlutterFlowTheme.of(context).subtitle2.override(
-                                  fontFamily: 'Poppins',
-                                  color: Colors.white,
-                                ),
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                            EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                        child: Text(
+                          'Pacientes cadastrados por um nutricionista podem ter acesso ao App',
+                          style: FlutterFlowTheme.of(context).bodyText1,
                         ),
-                        borderRadius: BorderRadius.circular(8.0),
                       ),
-                    ),
-                    Text(
-                      'Ao continuar você aceita os nossos \nTermos de Uso e Políticas de Privacidade',
-                      style: FlutterFlowTheme.of(context).bodyText1,
-                    ),
-                  ],
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                        child: wrapWithModel(
+                          model: _model.buttonLargeModel1,
+                          updateCallback: () => setState(() {}),
+                          child: ButtonLargeWidget(
+                            text: 'Entrar',
+                          ),
+                        ),
+                      ),
+                      Text(
+                        'Precisa de ajuda para entrar?',
+                        textAlign: TextAlign.end,
+                        style: FlutterFlowTheme.of(context).bodyText1,
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                        child: Text(
+                          'Não tem um nutricionista?\nEncontre o seu profissional ideal',
+                          textAlign: TextAlign.center,
+                          style: FlutterFlowTheme.of(context).bodyText1,
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                        child: InkWell(
+                          onTap: () async {},
+                          child: wrapWithModel(
+                            model: _model.buttonLargeModel2,
+                            updateCallback: () => setState(() {}),
+                            child: ButtonLargeWidget(
+                              text: 'Buscar nutricionista',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Text(
+                  'Ao continuar você aceita os nossos \nTermos de Uso e Políticas de Privacidade',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ],
             ),
