@@ -23,3 +23,5 @@ Um widget pode ser um pedaço, um componente da tela ou pode ser em alguns casos
 
 ### Árvore de widgets
 _Árvore de widgets_ é o nome dado à pilha de widgets que compõem a view. É chamada de arvore porque cada widget que tenha um ou mais "filhos" pode ser visto como um ramo ou um galho que compõe a árvore.
+
+<img src="/content/widget_three.pdf" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
