@@ -64,6 +64,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         width: double.infinity,
                         height: 100.0,
                         fit: BoxFit.contain,
+                        color: Colors.green,
                       ),
                     ),
                     Padding(
