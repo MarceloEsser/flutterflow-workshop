@@ -1,31 +1,16 @@
-# dietbox workshop
+# FlutterFlow workshop
 
-A new Flutter project.
+Projeto criado para um workshop na dietbox sobre a ferramenta [FlutterFlow](https://app.flutterflow.io/)
 
-## Getting Started
+## O que é o FlutterFlow?
 
-FlutterFlow projects are built to run on the Flutter _stable_ release.
+Anunciada no Google/IO, FlutterFlow é uma plataforma criada para desenvolver aplicativos mobile usando técnicas conhecidas como __low-code__ ou __codeless__. Fundada por dois ex-engenheiros(Abel Mengistu e Alex Greaves) da Google, tem como principal objetivo deixar o desenvolvimento de apps mais fácil e "acessível", tanto para desenvolvedores quando para designers.
 
-### IMPORTANT:
+## Flutter
 
-For projects with Firestore integration, you must first run the following commands to ensure the project compiles:
+SDK de desenvolvimento de aplicativos, permite que um aplicativo para iOS e Android (agora com suporte pra Win, Linux, Mac e Web) tenham a mesma base de código em Dart. O Flutter ficou muito famoso por ser um SDK de desenvolvimento hibrída e ser melhor que as outras em todos os aspectos: escalabilidade, performance, manutenção e etc. Muito famoso também por ser da Google, assim tendo muita divulgação e investimento envolvido. É indicado pela própria Google como escolha para desenvolvimento de aplicativos híbridos.
 
-```
-flutter pub get
-flutter packages pub run build_runner build --delete-conflicting-outputs
-```
 
-This command creates the generated files that parse each Record from Firestore into a schema object.
+## Low-code
 
-### Getting started continued:
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+É a prática de: desenvolver softwares a por meio de interfaces gráficas, ou seja, sem precisar de fato, mexer com código. __low-code__ ainda é diferente de __NO CODE__. em determinado momento será sim necessário mexer com código, seja para arrumar a infraestrutura, traduzir textos e muitas outras coisas. a técnica mais utilizada em __low-code__ é o __drag and drop__ onde para desenhar telas, programar ações e etc é literalmente arrastar e soltar.
