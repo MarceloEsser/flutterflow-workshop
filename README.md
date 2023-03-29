@@ -19,9 +19,20 @@ Anunciada no Google/IO, FlutterFlow é uma plataforma criada para desenvolver ap
 ## Por dentro do Flutter
 
 ### Widget
+"A Widget is an immutable description of part of a user interface" [doc](https://api.flutter.dev/flutter/widgets/Widget-class.html)
+
+Um widget pode ser um pedaço, um componente da tela, ou pode ser em alguns casos a própria tela (no final ambos são uma view e tem o mesmo tipo). Devem ser organizados/empilhados seguindo alguns padrões para que a tela ou a modal possa ser apresentada corretamente, caso contrário pode haver incoerências ou até mesmos a do aplicativo.
+
 Um widget pode ser um pedaço, um componente da tela ou pode ser em alguns casos a própria tela (no final ambos são uma view e tem o mesmo tipo). Devem ser organizados/empilhados seguindo alguns padrões para que a tela ou a modal possa ser apresentada corretamente, caso contrário pode haver incoerências ou até mesmos quebra nos aplicativos.
 
 ### Árvore de widgets
 _Árvore de widgets_ é o nome dado à pilha de widgets que compõem a view. É chamada de arvore porque cada widget que tenha um ou mais "filhos" pode ser visto como um ramo ou um galho que compõe a árvore.
 
-<img src="/content/widget_three.pdf" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="/content/widget_tree.png" style="height:900px; width:900px;"/>
+
+### BuildContext [doc](https://api.flutter.dev/flutter/widgets/BuildContext-class.html)
+_BuildContext_ é quase como uma âncora para a localização do widget na árvore, ou seja, ele contém o estado, a posição e a lista de widgets até o parent. 
+Essa relação, que o _BuildContext_ tem é sempre "de baixo pra cima", do child até o parent.
+
+
+### Estado
