@@ -80,12 +80,26 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
-                      child: wrapWithModel(
-                        model: _model.buttonLargeModel1,
-                        updateCallback: () => setState(() {}),
-                        child: ButtonLargeWidget(
-                          text: 'Entrar',
-                          backgroundColor: Color(0xFF39D256),
+                      child: InkWell(
+                        onTap: () async {
+                          context.pushNamed(
+                            'home_page',
+                            extra: <String, dynamic>{
+                              kTransitionInfoKey: TransitionInfo(
+                                hasTransition: true,
+                                transitionType: PageTransitionType.scale,
+                                alignment: Alignment.bottomCenter,
+                              ),
+                            },
+                          );
+                        },
+                        child: wrapWithModel(
+                          model: _model.buttonLargeModel1,
+                          updateCallback: () => setState(() {}),
+                          child: ButtonLargeWidget(
+                            text: 'Entrar',
+                            backgroundColor: Color(0xFF39D256),
+                          ),
                         ),
                       ),
                     ),
@@ -113,7 +127,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                         model: _model.buttonLargeModel2,
                         updateCallback: () => setState(() {}),
                         child: ButtonLargeWidget(
-                          text: 'Buscar nutricionista',
+                          text: 'Buscar nutricionistas',
                           backgroundColor:
                               FlutterFlowTheme.of(context).secondaryColor,
                         ),
