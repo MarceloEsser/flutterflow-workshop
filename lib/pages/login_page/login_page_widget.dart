@@ -90,7 +90,10 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     Text(
                       'Precisa de ajuda para entrar?',
                       textAlign: TextAlign.end,
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily: 'Poppins',
+                            color: FlutterFlowTheme.of(context).secondaryColor,
+                          ),
                     ),
                     Padding(
                       padding:
