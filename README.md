@@ -23,8 +23,6 @@ Anunciada no Google/IO, FlutterFlow é uma plataforma criada para desenvolver ap
 
 Um widget pode ser um pedaço, um componente da tela, ou pode ser em alguns casos a própria tela (no final ambos são uma view e tem o mesmo tipo). Devem ser organizados/empilhados seguindo alguns padrões para que a tela ou a modal possa ser apresentada corretamente, caso contrário pode haver incoerências ou até mesmos a do aplicativo.
 
-Um widget pode ser um pedaço, um componente da tela ou pode ser em alguns casos a própria tela (no final ambos são uma view e tem o mesmo tipo). Devem ser organizados/empilhados seguindo alguns padrões para que a tela ou a modal possa ser apresentada corretamente, caso contrário pode haver incoerências ou até mesmos quebra nos aplicativos.
-
 ### Árvore de widgets
 _Árvore de widgets_ é o nome dado à pilha de widgets que compõem a view. É chamada de arvore porque cada widget que tenha um ou mais "filhos" pode ser visto como um ramo ou um galho que compõe a árvore.
 
