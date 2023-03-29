@@ -11,9 +11,11 @@ class ButtonLargeWidget extends StatefulWidget {
   const ButtonLargeWidget({
     Key? key,
     this.text,
+    this.backgroundColor,
   }) : super(key: key);
 
   final String? text;
+  final Color? backgroundColor;
 
   @override
   _ButtonLargeWidgetState createState() => _ButtonLargeWidgetState();
@@ -50,10 +52,10 @@ class _ButtonLargeWidgetState extends State<ButtonLargeWidget> {
       text: widget.text!,
       options: FFButtonOptions(
         width: double.infinity,
-        height: 40.0,
+        height: 56.0,
         padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
         iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        color: FlutterFlowTheme.of(context).primaryColor,
+        color: widget.backgroundColor,
         textStyle: FlutterFlowTheme.of(context).subtitle2.override(
               fontFamily: 'Poppins',
               color: Colors.white,
@@ -62,7 +64,7 @@ class _ButtonLargeWidgetState extends State<ButtonLargeWidget> {
           color: Colors.transparent,
           width: 1.0,
         ),
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(24.0),
       ),
     );
   }
