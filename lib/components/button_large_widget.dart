@@ -45,6 +45,8 @@ class _ButtonLargeWidgetState extends State<ButtonLargeWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return FFButtonWidget(
       onPressed: () {
         print('Button pressed ...');
