@@ -14,7 +14,7 @@ Anunciada no Google/IO, FlutterFlow é uma ferramenta criada para desenvolver ap
 
 ## Low-code
 
-É a prática de: desenvolver softwares a por meio de interfaces gráficas, ou seja, sem precisar mexer com código. __low-code__ ainda é diferente de __NO CODE__. em determinado momento será sim necessário mexer com código, seja para arrumar a infraestrutura, traduzir textos, dentre outas coisas. A técnica mais utilizada em __low-code__ é o __drag and drop__ onde para desenhar telas, programar ações e etc é literalmente arrastar e soltar.
+É a prática de: desenvolver softwares a por meio de interfaces gráficas, ou seja, tem pouca necessidade de mexer no código. __low-code__ ainda é diferente de __NO CODE__. em determinado momento será sim necessário mexer com código, seja para arrumar a infraestrutura, traduzir textos, dentre outas coisas. A técnica mais utilizada em __low-code__ é o __drag and drop__ onde para desenhar telas, programar ações e etc é literalmente arrastar e soltar.
 
 ## Por dentro do Flutter
 
