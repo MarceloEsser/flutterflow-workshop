@@ -77,7 +77,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                           EdgeInsetsDirectional.fromSTEB(0.0, 72.0, 0.0, 0.0),
                       child: CachedNetworkImage(
                         imageUrl:
-                            'https://dietbox.azureedge.net/images/app-logo.png',
+                            'https://dietbox.azureedge.net/static/Images/home/logo-v2.webp',
                         width: double.infinity,
                         height: 100.0,
                         fit: BoxFit.contain,
