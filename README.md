@@ -30,7 +30,7 @@ _Árvore de widgets_ é o nome dado à pilha de widgets que compõem a view fina
 
 ### BuildContext [doc](https://api.flutter.dev/flutter/widgets/BuildContext-class.html)
 _BuildContext_ é quase como uma âncora para a localização do widget na árvore, ou seja, ele contém o estado, a posição e a lista de widgets até o parent. 
-Essa relação, que o _BuildContext_ tem é sempre "de baixo pra cima", do child até o parent.
+Essa relação que o _BuildContext_ tem é sempre "de baixo pra cima", do filho para os pais.
 
 ### Estado
 #### Efêmero
