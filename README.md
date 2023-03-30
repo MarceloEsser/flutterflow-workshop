@@ -35,3 +35,6 @@ Essa relação que o _BuildContext_ tem é sempre "de baixo pra cima", do filho 
 ### Estado
 #### Efêmero
 Também conhecido como estado da UI ou estado local, é o estado que você pode conter num único _Widget_.
+
+#### APP
+É estado que não é efêmero, geralmente é compartilhado por muitas partes do app ou até mesmo por todo o app
